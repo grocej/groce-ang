@@ -1,0 +1,53 @@
+body {
+  background-image: url(images/Star-field-3-Desktop-Wallpaper.jpg);
+}
+input {
+  color: white;
+  border-radius: 6px;
+  border-width: 4px;
+  border-color: yellow;
+  width: 300px;
+  height: 40px;
+  background-color: black;
+  font-family: Helvetica, sans-serif;
+  font-size: .8em;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: .5em;
+}
+button {
+  background-color: yellow;
+  color: black;
+  border-radius: 6px;
+  border-color: yellow;
+  width: 70px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.real-estate {
+  position:fixed;
+}
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+  align-content: center;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  font-size: 13px;
+}
+.example-text {
+  font-style: oblique;
+  font-size: .8em;
+  color: #aba8a8;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  display: block;
+  margin-bottom: 1.1em;
+}

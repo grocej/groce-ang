@@ -1,0 +1,8 @@
+<div class="" ng-controller="MainController">
+  <ul ng-repeat="planet in planets">
+    <li ng-bind template> {{ planets.length }} planets found! Why not explore: {{ planet.name }}</li>
+  </ul>
+  <li ng-if="planets.length == 0">
+      <strong>No results found...</strong>
+    </li>
+</div>
