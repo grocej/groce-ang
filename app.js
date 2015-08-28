@@ -2,20 +2,20 @@
   "use strict";
   angular
     .module('bestPlanet', [
-      'ngRoute'
+      'ngRoute',
     ])
     .config(function($routeProvider) {
       $routeProvider
       .when('/', {
-        templateUrl: "views/home.html",
-        controller: "HomeController",
-      })
-      .when('/planets', {
-        templateUrl: "views/planets.html",
         controller: "MainController",
+        templateUrl: 'views/planets.html'
       })
-      otherwise({
-       redirectTo: "/"
+      .when('/404', {
+        template: "<h2>Sorry, Not Found</h2>",
+
+      })
+      .otherwise({
+       redirectTo: "/404"
      });
    })
 })();

@@ -1,10 +1,10 @@
 body {
-  background-image: url(images/Star-field-3-Desktop-Wallpaper.jpg);
+  background-image: url(images/Stars01.jpg);
 }
 input {
   color: white;
-  border-radius: 6px;
-  border-width: 4px;
+  border-radius: 18px;
+  border-width: 1px;
   border-color: yellow;
   width: 300px;
   height: 40px;
@@ -50,4 +50,10 @@ button:hover {
   text-align: center;
   display: block;
   margin-bottom: 1.1em;
+}
+.planet-results {
+  font-family: Helvetica, sans-serif;
+  font-size: 2em;
+  color: white;
+  list-style-type: none;
 }

@@ -1,8 +1,12 @@
-<div class="" ng-controller="MainController">
-  <ul ng-repeat="planet in planets">
-    <li ng-bind template> {{ planets.length }} planets found! Why not explore: {{ planet.name }}</li>
+
+  <input type="text" ng-model="searchTerrain" placeholder="Enter Your Species' Favorite Terrain"><br />
+  <span class="example-text">(e.g. ocean, grassland, forest, desert, etc.)</span><br />
+
+  <ul ng-repeat="{ Planet in Planets | filter: Planets.terrain }">
+    <!-- <li> {{ planets.length }} planets found! Why not explore: {{ planet.name }} </li> -->
+    <li class="planet-results" ng-controller="MainController"> Explore: {{ Planets.name }}</li>
   </ul>
-  <li ng-if="planets.length == 0">
-      <strong>No results found...</strong>
-    </li>
-</div>
+  <!-- <li ng-if="planets.length == 0">
+
+    <strong>No results found...</strong>
+  </li> -->

@@ -14,13 +14,8 @@
     <div class="title-box">
       <img src="images/title_block.png" width="1000" />
     </div>
-    <div ng-controller="MainController as main">
-      <input type="test" ng-model="searchTerrain" placeholder="Enter Your Species' Favorite Terrain"><br /><span class="example-text">(e.g. ocean, grassland, forest, desert, etc.)</span><br />
-      <button type="button" ng-click="getAllPlanets() | results.terrain">Get My Planet!</button>
 
-      <ng-view ng->
-          {{planets.html}}
-      </ng-view>
+      <ng-view></ng-view>
 
     </div>
   </div>
@@ -28,8 +23,10 @@
 
 
 
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+
   <script src="app.js"></script>
   <script src="controller.js"></script>
   <script src="service.js"></script>
